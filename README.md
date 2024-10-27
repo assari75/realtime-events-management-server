@@ -14,7 +14,7 @@ A real-time event management backend built with FastAPI, SQLAlchemy and Pydantic
 1. Clone the repository:
 ```bash
 git clone https://github.com/assari75/realtime-events-management-server.git
-cd events-management-api
+cd realtime-events-management-server
 ```
 
 2. Create and activate a virtual environment:
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ## Running the Application
 
 1. Create .env file in the main directory:
-```
+```env
 DEVELOPMENT = True
 DATABASE_URL = "your_database_url"
 SECRET_KEY = "your_secret_key"
