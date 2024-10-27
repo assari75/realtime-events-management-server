@@ -81,7 +81,7 @@ def get_event(event_id: int, db: sa_orm.Session = fastapi.Depends(database.get_d
     return events_schemas.EventDetail.model_validate(event_data)
 
 
-@router.get("/{event_id}/cancel")
+@router.post("/{event_id}/cancel")
 async def cancel_event(
     event_id: int,
     db: sa_orm.Session = fastapi.Depends(database.get_db),
